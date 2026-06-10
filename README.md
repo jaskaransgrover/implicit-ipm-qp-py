@@ -36,7 +36,7 @@ The authors' proposed implicit method instead parameterizes the multipliers and 
 
 $\lambda = b_\mu(v),\qquad s = b_\mu(-v),\qquad v \in \mathbb{R}^m,$
 
-chosen so that $b_\mu(v)\,b_\mu(-v) = \mu$ and $b'_\mu(v) + b'_\mu(-v) = 1$ hold
+chosen so that $b_\mu(v)\,b_\mu(-v) = \mu$ and $\partial b_\mu(v) + \partial b_\mu(-v) = 1$ hold
 **by construction**. After condensing, the analogous block becomes $-B_\mu(-v)$ with
 entries confined to $[-1, 0)$ — a **bounded** spectrum, no matter how small $\mu$
 gets. That single change leads to a Newton system that stays
