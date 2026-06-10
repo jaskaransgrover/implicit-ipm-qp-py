@@ -31,10 +31,10 @@ after condensing, must form the diagonal block $-\Lambda^{-1}S$ whose entries
 $-s_i/\lambda_i$ blow up toward $0$ or $\infty$ as the barrier $\mu \to 0$. That is
 the source of the notorious ill-conditioning near the solution.
 
-The implicit method instead parameterizes the multipliers and slacks through a
+The authors' proposed implicit method instead parameterizes the multipliers and slacks through a
 **retraction map** $b_\mu$:
 
-$$\lambda = b_\mu(v),\qquad s = b_\mu(-v),\qquad v \in \mathbb{R}^m,$$
+$\lambda = b_\mu(v),\qquad s = b_\mu(-v),\qquad v \in \mathbb{R}^m,$
 
 chosen so that $b_\mu(v)\,b_\mu(-v) = \mu$ and $b'_\mu(v) + b'_\mu(-v) = 1$ hold
 **by construction**. After condensing, the analogous block becomes $-B_\mu(-v)$ with
