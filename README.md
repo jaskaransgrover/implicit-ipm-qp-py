@@ -40,9 +40,7 @@ chosen so that $b_\mu(v)\,b_\mu(-v) = \mu$ and $\partial b_\mu(v) + \partial b_\
 by construction. After condensing, the analogous block becomes $-B_\mu(-v)$ with
 entries confined to $[-1, 0)$ — a bounded spectrum, no matter how small $\mu$
 gets. That single change leads to a Newton system that stays
-well-conditioned all the way to convergence.
-
-This repo uses the **softplus** retraction
+well-conditioned all the way to convergence. This repo uses the authors' proposed **softplus** retraction
 
 $$b_\mu(v) = \tfrac{1}{2}\bigl(v + \sqrt{v^2 + 4\mu}\bigr).$$
 
