@@ -32,3 +32,5 @@ htmlcov/
 *.log
 results/
 data/maros_meszaros/*.mat
+
+figures/

@@ -16,4 +16,4 @@ repos:
         language: system
         types: [python]
         pass_filenames: false
-        files: ^(src|tests|)/
+        files: ^(src|tests|scripts)/
