@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import structlog
 
-from i2pd.utils.logging import get_logger
+from implicit_ipm_qp.utils.logging import get_logger
 
 
 def test_get_logger_emits_structured_event() -> None:

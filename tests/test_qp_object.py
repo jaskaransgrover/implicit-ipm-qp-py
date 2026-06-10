@@ -5,7 +5,7 @@ from __future__ import annotations
 import numpy as np
 import pytest
 
-from i2pd.qp import QP
+from implicit_ipm_qp.qp import QP
 
 
 def _toy_qp() -> QP:

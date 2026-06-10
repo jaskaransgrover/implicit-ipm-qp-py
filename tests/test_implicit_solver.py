@@ -14,9 +14,9 @@ import itertools
 
 import numpy as np
 
-from i2pd.qp import QP
-from i2pd.retraction import b_mu
-from i2pd.solvers.implicit import _starting_point, solve_implicit
+from implicit_ipm_qp.qp import QP
+from implicit_ipm_qp.retraction import b_mu
+from implicit_ipm_qp.solvers.implicit import _starting_point, solve_implicit
 
 
 def _empty_equalities(n: int) -> tuple[np.ndarray, np.ndarray]:

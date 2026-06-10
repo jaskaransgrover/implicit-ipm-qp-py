@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import numpy as np
 
-from i2pd.qp import (
+from implicit_ipm_qp.qp import (
     QP,
     duality_gap,
     residual_complementarity,

@@ -1,5 +1,5 @@
 [project]
-name = "implicit-ipm-qp"
+name = "implicit-ipm-qp-py"
 version = "0.1.0"
 description = "Python reproduction of Implicit Primal-Dual Interior-Point Methods for Quadratic Programming (Arrizabalaga & Manchester)."
 readme = "README.md"
@@ -9,7 +9,6 @@ authors = [{ name = "Jaskaran Grover" }]
 dependencies = [
     "numpy>=2.0",
     "scipy>=1.13",
-    "pydantic>=2.7",
     "structlog>=24.1",
 ]
 
@@ -27,7 +26,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/i2pd"]
+packages = ["src/implicit_ipm_qp"]
 
 [tool.ruff]
 line-length = 100

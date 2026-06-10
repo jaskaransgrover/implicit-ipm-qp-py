@@ -5,7 +5,7 @@ from __future__ import annotations
 import numpy as np
 import pytest
 
-from i2pd.utils.seeding import seed_everything
+from implicit_ipm_qp.utils.seeding import seed_everything
 
 
 def test_seed_everything_is_deterministic() -> None:

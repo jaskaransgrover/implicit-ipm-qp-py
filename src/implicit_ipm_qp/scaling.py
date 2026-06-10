@@ -23,7 +23,7 @@ from dataclasses import dataclass
 
 import numpy as np
 
-from i2pd.qp import QP, FloatArray
+from implicit_ipm_qp.qp import QP, FloatArray
 
 _TINY: float = 1e-12
 

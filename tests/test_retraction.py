@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import numpy as np
 
-from i2pd.retraction import b_mu, db_mu
+from implicit_ipm_qp.retraction import b_mu, db_mu
 
 
 def _v_grid() -> np.ndarray:

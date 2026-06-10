@@ -2,9 +2,9 @@
 
 from __future__ import annotations
 
-import i2pd
+import implicit_ipm_qp
 
 
 def test_package_imports() -> None:
-    assert isinstance(i2pd.__version__, str)
-    assert i2pd.__version__ != ""
+    assert isinstance(implicit_ipm_qp.__version__, str)
+    assert implicit_ipm_qp.__version__ != ""

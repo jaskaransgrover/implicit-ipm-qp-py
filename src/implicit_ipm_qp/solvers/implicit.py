@@ -21,7 +21,7 @@ from dataclasses import dataclass, field
 import numpy as np
 import scipy.linalg
 
-from i2pd.qp import (
+from implicit_ipm_qp.qp import (
     QP,
     FloatArray,
     duality_gap,
@@ -29,8 +29,8 @@ from i2pd.qp import (
     residual_inequality,
     residual_stationarity,
 )
-from i2pd.retraction import b_mu, db_mu
-from i2pd.utils.logging import get_logger
+from implicit_ipm_qp.retraction import b_mu, db_mu
+from implicit_ipm_qp.utils.logging import get_logger
 
 _log = get_logger(__name__)
 

@@ -5,8 +5,8 @@ from __future__ import annotations
 import numpy as np
 import pytest
 
-from i2pd.qp import QP
-from i2pd.scaling import ruiz_equilibrate
+from implicit_ipm_qp.qp import QP
+from implicit_ipm_qp.scaling import ruiz_equilibrate
 
 
 def _badly_scaled_qp() -> QP:
