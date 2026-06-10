@@ -58,6 +58,36 @@ cd implicit-ipm-qp-py
 uv sync --extra dev
 ```
 
+## Worked example: a 2D toy QP
+
+The script [`scripts/toy_qp.py`](scripts/toy_qp.py) reproduces the toy problem
+from the paper (Fig. 3):
+
+$$\min_{x}\ \tfrac12\bigl(x_1^2 + x_2^2\bigr)\quad\text{s.t.}\quad
+\begin{aligned}
+x_1 + x_2 &\ge 0.65\\
+x_2 &\ge -0.1\\
+-x_1 &\ge -0.85\\
+-x_2 &\ge -0.8
+\end{aligned}$$
+
+The unconstrained minimum is the origin, but $x_1 + x_2 \ge 0.65$ cuts it off, so
+the optimum is the projection of the origin onto that line: $x^\star = (0.325, 0.325)$.
+Only the first constraint is active; the other three are slack.
+
+```bash
+uv run python scripts/toy_qp.py
+```
+
+<div align="center">
+<img src="figures/toy_qp.png" alt="Toy QP: feasible region with objective level curves, and implicit IPM convergence" width="850">
+</div>
+
+On the left, the concentric circles are the objective's level curves; the solution
+sits exactly where the smallest feasible circle is tangent to the active
+constraint. On the right, the duality gap decays geometrically while the
+stationarity residual collapses to machine precision within a few iterations.
+
 ## Hello world
 
 Solve $\min \tfrac12(x_1^2 + x_2^2)$ subject to $x_1 + x_2 \ge 2$. The constraint is

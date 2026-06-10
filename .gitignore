@@ -33,4 +33,5 @@ htmlcov/
 results/
 data/maros_meszaros/*.mat
 
-figures/
+figures/*
+!figures/toy_qp.png
