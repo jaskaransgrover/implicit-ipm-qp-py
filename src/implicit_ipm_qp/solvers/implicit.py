@@ -146,6 +146,11 @@ def _residuals(
     r_x = residual_stationarity(qp, x, lam, gamma)
     r_i = residual_inequality(qp, x, s)
     r_e = residual_equality(qp, x)
+    # With no inequality constraints (m = 0) there is nothing to retract: v is
+    # empty and the barrier beta is 0, so skip b_mu (which requires beta > 0).
+    if v.shape[0] == 0:
+        empty = np.zeros(0, dtype=np.float64)
+        return r_x, r_i, r_e, empty, empty
     r_lam_mu = lam - b_mu(v, beta)
     r_s_mu = s - b_mu(-v, beta)
     return r_x, r_i, r_e, r_lam_mu, r_s_mu

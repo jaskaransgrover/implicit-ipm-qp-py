@@ -153,8 +153,8 @@ All four run in CI on every push.
 - [x] Softplus retraction map with property tests
 - [x] Implicit interior-point solver
 - [ ] Explicit baseline solver (for the conditioning comparison)
-- [ ] Toy-QP reproduction (paper Fig. 3)
-- [ ] Maros–Mészáros benchmark suite
+- [x] Toy-QP reproduction (paper Fig. 3)
+- [x] Maros–Mészáros benchmark suite
 - [ ] Factorization-free MINRES path (paper Fig. 5)
 - [ ] `float32` vs `float64` precision study (paper Fig. 6)
 
