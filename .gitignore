@@ -31,7 +31,8 @@ htmlcov/
 # Project-specific: solver/benchmark outputs and logs
 *.log
 results/
-data/maros_meszaros/*.mat
 
 figures/*
 !figures/toy_qp.png
+# Full Maros-Meszaros set (not committed; subset lives in data/)
+data_full/
